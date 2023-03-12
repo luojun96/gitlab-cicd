@@ -22,9 +22,9 @@ nameOverride: gitlab
 gitlab: ce
 gitlabCEImage: gitlab/gitlab-ce:10.1.0-ce.0
 gitlabEEImage: gitlab/gitlab-ee:10.1.0-ee.0
-postgresPassword: NDl1ZjNtenMxcWR6NXZnbw==
-initialSharedRunnersRegistrationToken: "tQtCbx5UZy_ByS7FyzUH"
-mattermostAppSecret: NDl1ZjNtenMxcWR6NXZnbw==
+postgresPassword: 
+initialSharedRunnersRegistrationToken: ""
+mattermostAppSecret: 
 mattermostAppUID: aadas
 redisImage: redis:3.2.10
 redisDedicatedStorage: false
@@ -61,14 +61,14 @@ gitlabRunnerImage: gitlab/gitlab-runner:alpine-v10.1.0
 #postgresStorageClass: default
 #redisStorageClass: default
 
-healthCheckToken: 'SXBAQichEJasbtDSygrD'
+healthCheckToken: ''
 # Optional, for GitLab EE images only
 #gitlabEELicense: base64-encoded-license
 
 gitlab-runner:
   checkInterval: 1
   # runnerRegistrationToken must equal initialSharedRunnersRegistrationToken
-  runnerRegistrationToken: "tQtCbx5UZy_ByS7FyzUH"
+  runnerRegistrationToken: ""
   # resources:
   #   limits:
   #     memory: 500Mi
